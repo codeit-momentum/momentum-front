@@ -81,9 +81,10 @@ const style = css`
     font-family:
       'NEXONLv1Gothic',
       Noto Sans KR;
+    background: #222222;
+    color: #f0eee9;
   }
   #root {
-    color: #222222;
     height: 100vh;
     letter-spacing: -0.01rem;
   }
