@@ -1,13 +1,12 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const GNBLayout = styled.div`
-  ${({ theme: { mixin } }) =>
-    mixin.flexBox({ justify: 'space-between', align: 'flex-start' })};
-  background-color: ${({ theme }) => theme.colors.black};
+  flex-direction: row;
   position: fixed;
   width: 33.5rem;
   height: 6rem;
   bottom: 0;
+  background: #fff;
 `;
 export const NavItem = styled.ul`
   display: flex;

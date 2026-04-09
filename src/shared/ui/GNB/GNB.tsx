@@ -1,14 +1,6 @@
 import { NavLink } from 'react-router';
 
 import * as S from './GNB.style';
-import IcActiveFriends from '../../assets/svg/navigation/IcActiveFriends';
-import IcActiveHome from '../../assets/svg/navigation/IcActiveHome';
-import IcActiveMoment from '../../assets/svg/navigation/IcActiveMoment';
-import IcActiveMyPage from '../../assets/svg/navigation/IcActiveMyPage';
-import IcUnactiveFriends from '../../assets/svg/navigation/IcUnactiveFriends';
-import IcUnactiveHome from '../../assets/svg/navigation/IcUnactiveHome';
-import IcUnactiveMoment from '../../assets/svg/navigation/IcUnactiveMoment';
-import IcUnactiveMyPage from '../../assets/svg/navigation/IcUnactiveMyPage';
 
 const GNB = () => {
   const navList = [
@@ -16,29 +8,36 @@ const GNB = () => {
       label: 'home',
       name: '홈',
       path: '/home',
-      activeIcon: <IcActiveHome />,
-      unactiveIcon: <IcUnactiveHome />,
-    },
-    {
-      label: 'moment',
-      name: '모멘트',
-      path: '/moment',
-      activeIcon: <IcActiveMoment />,
-      unactiveIcon: <IcUnactiveMoment />,
+      activeIcon: null,
+      unactiveIcon: null,
     },
     {
       label: 'feed',
       name: '피드',
       path: '/feed',
-      activeIcon: <IcActiveFriends />,
-      unactiveIcon: <IcUnactiveFriends />,
+      activeIcon: null,
+      unactiveIcon: null,
+    },
+    {
+      label: 'moment',
+      name: '모멘트 생성',
+      path: '/moment',
+      activeIcon: null,
+      unactiveIcon: null,
+    },
+    {
+      label: 'moment',
+      name: '모멘트',
+      path: '/moment',
+      activeIcon: null,
+      unactiveIcon: null,
     },
     {
       label: 'mypage',
-      name: '마이',
+      name: '버킷리스트',
       path: '/mypage',
-      activeIcon: <IcActiveMyPage />,
-      unactiveIcon: <IcUnactiveMyPage />,
+      activeIcon: null,
+      unactiveIcon: null,
     },
   ];
 
@@ -49,6 +48,7 @@ const GNB = () => {
           {({ isActive }) => (
             <S.NavItem>
               {isActive ? nav.activeIcon : nav.unactiveIcon}
+              {nav.name}
             </S.NavItem>
           )}
         </NavLink>
