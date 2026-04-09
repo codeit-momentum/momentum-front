@@ -11,6 +11,8 @@ const style = css`
   ol,
   ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   div {
@@ -34,6 +36,8 @@ const style = css`
   a {
     text-decoration: none;
     color: inherit;
+    padding: 0;
+    margin: 0;
     &:hover {
       text-decoration: none;
       color: none;
