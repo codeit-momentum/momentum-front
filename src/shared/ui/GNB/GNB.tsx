@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router';
-
 import * as S from './GNB.style';
 
 const GNB = () => {
@@ -7,7 +5,7 @@ const GNB = () => {
     {
       label: 'home',
       name: '홈',
-      path: '/home',
+      path: '/main',
       activeIcon: null,
       unactiveIcon: null,
     },
@@ -19,7 +17,7 @@ const GNB = () => {
       unactiveIcon: null,
     },
     {
-      label: 'moment',
+      label: 'moment-create',
       name: '모멘트 생성',
       path: '/moment',
       activeIcon: null,
@@ -44,14 +42,14 @@ const GNB = () => {
   return (
     <S.GNBLayout>
       {navList.map((nav) => (
-        <NavLink key={nav.label} to={nav.path}>
+        <S.NavLinkWrapper key={nav.label} to={nav.path}>
           {({ isActive }) => (
-            <S.NavItem>
+            <S.NavItem isActive={isActive}>
               {isActive ? nav.activeIcon : nav.unactiveIcon}
               {nav.name}
             </S.NavItem>
           )}
-        </NavLink>
+        </S.NavLinkWrapper>
       ))}
     </S.GNBLayout>
   );

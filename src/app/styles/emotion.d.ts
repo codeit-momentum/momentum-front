@@ -7,6 +7,8 @@ declare module '@emotion/react' {
       white: string;
       yellow: string;
       violet: string;
+      textGray: string;
+      dividerGray: string;
     };
   }
 }
