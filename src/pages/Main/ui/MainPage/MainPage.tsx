@@ -1,6 +1,6 @@
 import * as S from './MainPage.style';
 
-export default function MainPage() {
+export function MainPage() {
   return (
     <S.MainPageLayout>
       <div>

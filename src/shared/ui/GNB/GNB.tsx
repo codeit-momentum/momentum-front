@@ -17,9 +17,9 @@ const GNB = () => {
       unactiveIcon: null,
     },
     {
-      label: 'moment-create',
+      label: 'create-moment',
       name: '모멘트 생성',
-      path: '/moment',
+      path: '/create-moment',
       activeIcon: null,
       unactiveIcon: null,
     },
@@ -31,9 +31,9 @@ const GNB = () => {
       unactiveIcon: null,
     },
     {
-      label: 'mypage',
+      label: 'bucket-list',
       name: '버킷리스트',
-      path: '/mypage',
+      path: '/bucket-list',
       activeIcon: null,
       unactiveIcon: null,
     },
