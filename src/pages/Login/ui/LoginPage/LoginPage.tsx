@@ -1,4 +1,4 @@
-export default function LoginPage() {
+export function LoginPage() {
   return (
     <div>
       <div>로그인 페이지</div>

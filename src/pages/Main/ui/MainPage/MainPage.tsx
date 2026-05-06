@@ -1,7 +1,11 @@
-export default function MainPage() {
+import * as S from './MainPage.style';
+
+export function MainPage() {
   return (
-    <div>
-      <div>메인 페이지</div>
-    </div>
+    <S.MainPageLayout>
+      <div>
+        메인 페이지
+      </div>
+    </S.MainPageLayout>
   );
 }
