@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router';
 
-import GNB from '@/shared/ui/GNB/GNB';
+import { GNB } from '@/shared';
 
 const LayoutWithGNB = () => {
   return (

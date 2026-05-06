@@ -1,6 +1,6 @@
 import * as S from './GNB.style';
 
-const GNB = () => {
+export const GNB = () => {
   const navList = [
     {
       label: 'home',
@@ -54,5 +54,3 @@ const GNB = () => {
     </S.GNBLayout>
   );
 };
-
-export default GNB;
