@@ -1,1 +1,1 @@
-export { CreateMomentPage } from './ui/CreateMoment/CreateMomentPage';
+export { CreateMomentPage } from './ui/CreateMomentPage/CreateMomentPage';
