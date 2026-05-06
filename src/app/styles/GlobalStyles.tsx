@@ -66,7 +66,6 @@ const style = css`
     cursor: pointer;
     border: none;
     background: none;
-    disabled:;
     padding: 0;
   }
 
