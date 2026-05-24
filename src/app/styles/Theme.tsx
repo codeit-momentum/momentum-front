@@ -1,12 +1,45 @@
 import { css } from '@emotion/react';
 
 const colors = {
-  black: '#222222',
-  white: '#F0EEE9',
-  yellow: '#D8E63C',
-  violet: '#D684FC',
-  textGray: 'rgba(255, 255, 255, 0.60)',
-  dividerGray: 'rgba(255, 255, 255, 0.10)',
+  brand: {
+    primary: {
+      default: '#D8E63C',
+      pressed: '#BCCF2D',
+    },
+    secondary: {
+      default: '#273287',
+      pressed: '#1F286B',
+    },
+  },
+  surface: {
+    bg: '#222222',
+    sunken: '#1A1A1A',
+    lv1: '#2C2C2C',
+    lv2: '#373737',
+    lv3: '#454545',
+  },
+  content: {
+    primary: 'rgba(255, 255, 255, 0.95)',
+    secondary: 'rgba(255, 255, 255, 0.65)',
+    tertiary: 'rgba(255, 255, 255, 0.40)',
+    invert: '#222222',
+    brand: '#D8E63C',
+  },
+  border: {
+    default: 'rgba(255, 255, 255, 0.10)',
+    strong: 'rgba(255, 255, 255, 0.20)',
+    brand: '#D8E63C',
+  },
+  status: {
+    success: '#00E676',
+    error: '#FF4B4B',
+    warning: '#FFAB40',
+    info: '#273287',
+  },
+  overlay: {
+    dim: 'rgba(0, 0, 0, 0.60)',
+    glass: 'rgba(255, 255, 255, 0.05)',
+  },
 };
 
 const fontFamily = {

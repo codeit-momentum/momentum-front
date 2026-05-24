@@ -4,12 +4,68 @@ import type { SerializedStyles } from '@emotion/react';
 declare module '@emotion/react' {
   export interface Theme {
     colors: {
-      black: string;
-      white: string;
-      yellow: string;
-      violet: string;
-      textGray: string;
-      dividerGray: string;
+      brand: {
+        primary: {
+          /** #D8E63C - 핵심 버튼, 강조 텍스트 */
+          default: string;
+          /** #BCCF2D - Primary 클릭 시 피드백 */
+          pressed: string;
+        };
+        secondary: {
+          /** #273287 - 보조 섹션, 깊이감 있는 강조 */
+          default: string;
+          /** #1F286B - Secondary 클릭 시 피드백 */
+          pressed: string;
+        };
+      };
+      surface: {
+        /** #222222 - 기본 배경 */
+        bg: string;
+        /** #1A1A1A - 입력 폼 */
+        sunken: string;
+        /** #2C2C2C - 기본 카드, 리스트 배경 */
+        lv1: string;
+        /** #373737 - 버튼, 플로팅 요소 */
+        lv2: string;
+        /** #454545 - 가장 밝은 강조 레이어 */
+        lv3: string;
+      };
+      content: {
+        /** #FFFFFF 95% - 메인 타이틀, 본문 */
+        primary: string;
+        /** #FFFFFF 65% - 보조 설명, 레이블 */
+        secondary: string;
+        /** #FFFFFF 40% - 비활성화 텍스트, 플레이스홀더 */
+        tertiary: string;
+        /** #222222 - 밝은 배경 위에 올라가는 어두운 텍스트 */
+        invert: string;
+        /** #D8E63C - 텍스트 내 강조 키워드 */
+        brand: string;
+      };
+      border: {
+        /** #FFFFFF 10% - 일반적인 구분선 */
+        default: string;
+        /** #FFFFFF 20% - 명확한 구분 (ex. 카드 테두리) */
+        strong: string;
+        /** #D8E63C - 포커스된 입력창, 선택된 카드 테두리 */
+        brand: string;
+      };
+      status: {
+        /** #00E676 - 성공, 미션 완료 */
+        success: string;
+        /** #FF4B4B - 삭제, 경고, 실패 */
+        error: string;
+        /** #FFAB40 - 주의 메시지 */
+        warning: string;
+        /** #273287 - 일반 정보 안내 */
+        info: string;
+      };
+      overlay: {
+        /** #000000 60% - 모달 배경 */
+        dim: string;
+        /** #FFFFFF 5% - 약간의 비침 효과가 필요한 경우 */
+        glass: string;
+      };
     };
     fontFamily: {
       /** 메인 폰트 - NEXON Lv.1 Gothic */

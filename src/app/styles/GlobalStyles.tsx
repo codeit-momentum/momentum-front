@@ -84,8 +84,8 @@ const style = (theme: Theme) => css`
     height: 100vh;
     padding: 0 2.4rem;
     font-family: ${theme.fontFamily.main};
-    background: ${theme.colors.black};
-    color: ${theme.colors.white};
+    background: ${theme.colors.surface.bg};
+    color: ${theme.colors.content.primary};
     ${theme.typography.body1};
   }
   #root {
