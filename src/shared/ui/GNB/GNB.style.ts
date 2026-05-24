@@ -13,7 +13,7 @@ export const GNBLayout = styled.div`
   height: 6rem;
   padding: 0.4rem 2rem 1.4rem 2rem;
   bottom: 0;
-  border-top: 0.1rem solid ${({ theme }) => theme.colors.dividerGray};
+  border-top: 0.1rem solid ${({ theme }) => theme.colors.border.default};
 `;
 
 export const NavLinkWrapper = styled(NavLink)`
@@ -27,5 +27,5 @@ export const NavItem = styled.ul<NavItemProps>`
   width: 100%;
   font-size: 1.2rem;
   color: ${({ isActive, theme }) =>
-    isActive ? theme.colors.yellow : theme.colors.textGray};
+    isActive ? theme.colors.content.brand : theme.colors.content.secondary};
 `;
