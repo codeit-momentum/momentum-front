@@ -1,7 +1,9 @@
-import { css, Global } from '@emotion/react';
+import { css, Global, useTheme } from '@emotion/react';
 import emotionNormalize from 'emotion-normalize';
 
-const style = css`
+import type { Theme } from '@emotion/react';
+
+const style = (theme: Theme) => css`
   ${emotionNormalize};
 
   * {
@@ -81,15 +83,13 @@ const style = css`
     max-width: 700px;
     height: 100vh;
     padding: 0 2.4rem;
-    font-family:
-      'NEXONLv1Gothic',
-      Noto Sans KR;
-    background: #222222;
-    color: #f0eee9;
+    font-family: ${theme.fontFamily.main};
+    background: ${theme.colors.black};
+    color: ${theme.colors.white};
+    ${theme.typography.body1};
   }
   #root {
     height: 100vh;
-    letter-spacing: -0.01rem;
   }
   #root,
   body,
@@ -110,7 +110,9 @@ const style = css`
 `;
 
 const GlobalStyle = () => {
-  return <Global styles={style} />;
+  const theme = useTheme();
+
+  return <Global styles={style(theme)} />;
 };
 
 export default GlobalStyle;
