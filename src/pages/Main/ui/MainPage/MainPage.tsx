@@ -11,7 +11,7 @@ export function MainPage() {
           alert('hi');
         }}
       >
-        팔로우 하러 가기
+        팔로우하러 가기
       </Button>
     </S.MainPageLayout>
   );
