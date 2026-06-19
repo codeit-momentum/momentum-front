@@ -31,7 +31,7 @@ const variantStyles = (theme: Theme) => ({
   `,
   secondary: css`
     background: ${theme.colors.surface.lv3};
-    color: ${theme.colors.content.secondary};
+    color: ${theme.colors.content.primary};
   `,
   danger: css`
     background: ${theme.colors.status.error};
@@ -46,6 +46,7 @@ export const ButtonLayout = styled.button<ButtonStyleProps>`
 
   ${({ size }) => sizeStyles[size]}
   ${({ variant, theme }) => variantStyles(theme)[variant]}
+  ${({ theme }) => theme.typography.title1};
 
   font-size: 2rem;
 `;

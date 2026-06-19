@@ -5,13 +5,13 @@ export function MainPage() {
   return (
     <S.MainPageLayout>
       <Button
-        size="sm"
-        variant="primary"
+        size="lg"
+        variant="secondary"
         onClick={() => {
           alert('hi');
         }}
       >
-        버튼
+        팔로우 하러 가기
       </Button>
     </S.MainPageLayout>
   );
