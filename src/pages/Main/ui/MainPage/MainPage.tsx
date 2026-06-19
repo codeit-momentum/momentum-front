@@ -1,11 +1,18 @@
+import { Button } from './../../../../shared/ui/Button/Button';
 import * as S from './MainPage.style';
 
 export function MainPage() {
   return (
     <S.MainPageLayout>
-      <div>
-        메인 페이지
-      </div>
+      <Button
+        size="sm"
+        variant="primary"
+        onClick={() => {
+          alert('hi');
+        }}
+      >
+        버튼
+      </Button>
     </S.MainPageLayout>
   );
 }
