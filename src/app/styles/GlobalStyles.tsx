@@ -88,6 +88,14 @@ const style = (theme: Theme) => css`
     color: ${theme.colors.content.primary};
     ${theme.typography.body1};
   }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
   #root {
     height: 100vh;
   }
